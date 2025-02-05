@@ -3,7 +3,7 @@ const URI = process.env.MONGODB_URI;
 
 const connectDB = async ()=>{
     try {
-        await mongoose.connect(URI);
+        await mongoose.connect('mongodb+srv://booking:Aniket%402002@cluster0.rrneucc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
         console.log("Connected Successfully");
     } catch (error) {
         console.log(error);
